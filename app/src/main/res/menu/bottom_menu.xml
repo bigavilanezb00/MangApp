@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/recienteFragment"
+        android:icon="@drawable/ic_baseline_reciente"
+        android:title="Reciente" />
+
+    <item
+        android:id="@+id/destacadoFragment"
+        android:icon="@drawable/ic_baseline_destacado"
+        android:title="Destacado" />
+
+    <item
+        android:id="@+id/buscadorFragment"
+        android:icon="@drawable/ic_baseline_buscador"
+        android:title="Buscador" />
+
+    <item
+        android:id="@+id/favoritosFragment"
+        android:icon="@drawable/ic_baseline_favoritos"
+        android:title="Favoritos" />
+    <item
+        android:id="@+id/ajustesFragment"
+        android:icon="@drawable/ic_baseline_ajustes"
+        android:title="Ajustes" />
+</menu>

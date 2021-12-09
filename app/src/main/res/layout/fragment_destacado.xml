@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/header" />
+
+            <TextView
+                android:id="@+id/weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Weekly Shonen Jump"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/weekly"
+                tools:ignore="SpeakableTextPresentCheck">>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/manga1"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="5dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/manga1"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga2"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga1"
+                        app:layout_constraintTop_toTopOf="@id/manga1"
+                        app:srcCompat="@drawable/manga2"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga3"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga2"
+                        app:layout_constraintTop_toTopOf="@id/manga2"
+                        app:srcCompat="@drawable/manga3"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga4"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga3"
+                        app:layout_constraintTop_toTopOf="@id/manga3"
+                        app:srcCompat="@drawable/manga4"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga5"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga4"
+                        app:layout_constraintTop_toTopOf="@id/manga4"
+                        app:srcCompat="@drawable/manga5"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga6"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga5"
+                        app:layout_constraintTop_toTopOf="@id/manga5"
+                        app:srcCompat="@drawable/manga6"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga7"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga6"
+                        app:layout_constraintTop_toTopOf="@id/manga6"
+                        app:srcCompat="@drawable/manga7"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/otros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Otros"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/weekly"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal1" />
+
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/otros"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/manga8"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="5dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/blueexorcist26"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga9"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga8"
+                        app:layout_constraintTop_toTopOf="@id/manga8"
+                        app:srcCompat="@drawable/dgrayman16"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga10"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga9"
+                        app:layout_constraintTop_toTopOf="@id/manga9"
+                        app:srcCompat="@drawable/kaguya21"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga11"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga10"
+                        app:layout_constraintTop_toTopOf="@id/manga10"
+                        app:srcCompat="@drawable/oshinoko3"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga12"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga11"
+                        app:layout_constraintTop_toTopOf="@id/manga11"
+                        app:srcCompat="@drawable/owari25"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga13"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga12"
+                        app:layout_constraintTop_toTopOf="@id/manga12"
+                        app:srcCompat="@drawable/tokyorevengers13"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga14"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga13"
+                        app:layout_constraintTop_toTopOf="@id/manga13"
+                        app:srcCompat="@drawable/worldtrigger22"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/romance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Romance"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/otros"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal2" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/romance"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/manga15"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="5dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/manga15"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga16"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga15"
+                        app:layout_constraintTop_toTopOf="@id/manga15"
+                        app:srcCompat="@drawable/manga16"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga17"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga16"
+                        app:layout_constraintTop_toTopOf="@id/manga16"
+                        app:srcCompat="@drawable/manga17"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga18"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga17"
+                        app:layout_constraintTop_toTopOf="@id/manga17"
+                        app:srcCompat="@drawable/manga18"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga19"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga18"
+                        app:layout_constraintTop_toTopOf="@id/manga18"
+                        app:srcCompat="@drawable/manga19"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga20"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga19"
+                        app:layout_constraintTop_toTopOf="@id/manga19"
+                        app:srcCompat="@drawable/manga20"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga21"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga20"
+                        app:layout_constraintTop_toTopOf="@id/manga20"
+                        app:srcCompat="@drawable/manga21"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/accion_aventura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Acción-Aventura"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/romance"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal3" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/accion_aventura"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/manga22"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="5dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/manga22"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga23"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga22"
+                        app:layout_constraintTop_toTopOf="@id/manga22"
+                        app:srcCompat="@drawable/manga23"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga24"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga23"
+                        app:layout_constraintTop_toTopOf="@id/manga23"
+                        app:srcCompat="@drawable/manga24"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga25"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga24"
+                        app:layout_constraintTop_toTopOf="@id/manga24"
+                        app:srcCompat="@drawable/manga25"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga26"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga25"
+                        app:layout_constraintTop_toTopOf="@id/manga25"
+                        app:srcCompat="@drawable/manga26"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga27"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga26"
+                        app:layout_constraintTop_toTopOf="@id/manga26"
+                        app:srcCompat="@drawable/manga27"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/manga28"
+                        android:layout_width="130dp"
+                        android:layout_height="190dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintStart_toEndOf="@id/manga27"
+                        app:layout_constraintTop_toTopOf="@id/manga27"
+                        app:srcCompat="@drawable/manga28"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
